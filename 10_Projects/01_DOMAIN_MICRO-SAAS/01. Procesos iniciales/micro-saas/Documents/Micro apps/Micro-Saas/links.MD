@@ -1,0 +1,31 @@
+https://www.sidetool.co/post/micro-saas-2025-7-high-profit-ideas-for-solo-founders/#:~:text=In%20fact%2C%20you%20don't,upfront%20costs%20and%20minimal%20overhead.
+
+https://www.articsledge.com/post/micro-saas-ideas#:~:text=Micro%20SaaS%20are%20small%2C%20specialized,averaging%2041%20percent%20in%202024.
+
+
+
+
+https://www.rockingweb.com.au/micro-saas-revenue-analysis-2025/
+
+https://medium.com/@futariboy/yes-i-built-a-70k-micro-saas-in-only-6-days-heres-how-8e448153fa13
+
+
+https://www.youtube.com/watch?v=NvtsM8Nk72c
+
+https://www.youtube.com/watch?v=47nvBX_mQAM&t=26s
+
+https://dev.to/dev_tips/the-solo-dev-saas-stack-powering-10kmonth-micro-saas-tools-in-2025-pl7#:~:text=This%20isn't%202015.,re%20going%20to%20walk%20through:
+
+https://www.youtube.com/watch?v=npcL7oRZQlI
+
+https://www.sidetool.co/post/10-profitable-microsaas-ideas-for-aspiring-entrepreneurs/#:~:text=The%20micro%20SaaS%20space%20is,Key%20Characteristics%20Driving%20Success
+
+https://www.youtube.com/watch?v=-ntK2gjitRw&t=1s
+
+
+
+tema:
+
+
+How Solo Developers Are Making $60K/Month in 12 Months
+The Rise of Micro-SaaS: How Solo Founders Are Building Profitable AI Startups

@@ -1,0 +1,483 @@
+C:\Users\armando\Documents\AHS.DevKnowledge
+├── .gitignore
+├── Migrate-AgendaNotes.ps1
+├── MyTree.ps1
+├── New-AHSDevVault.ps1
+├── Treetog-I-Web-Folder.ico
+├── Untitled 1.base
+├── Untitled.base
+├── Welcome.md
+├── what-is-this.md
+├── _docs
+│   ├── _tree_folders.txt
+├── _ops
+│   ├── 02-Tools
+│   │   ├── Coverlet.md
+│   │   ├── Plantillas de Obsidian.md
+│   ├── logs
+│   │   ├── notes-migration-20260127-033452.csv
+│   │   ├── notes-migration-20260127-033452.txt
+├── 📆 Daily Agenda
+│   ├── Coding Agenda
+│   │   ├── TimeDate.Now
+│   │   │   ├── Azure.md
+│   │   │   ├── Visual Studio y cuentas.md
+│   ├── Daily
+│   │   ├── 2026.Jan.29.Thu.md
+│   │   ├── 2026.Jan.30.Fri.md
+│   │   ├── Untitled.md
+├── 00-Inbox
+│   ├── what-is-this.md
+│   ├── Gemini User Ancon Hill Services
+│   │   ├── 01..md
+│   │   ├── 02. AHS.FinTechBook estructura folders.md
+│   │   ├── 03. ClickUp.md
+│   │   ├── 04..md
+│   │   ├── 05. Micro-SaaS.md
+│   │   ├── 06..md
+│   │   ├── 07. Claude and ChatGPT to consult about Google Antigravity Coding Tool.md
+│   │   ├── Untitled.md
+├── 01. Antigravity
+│   ├── Configuration
+│   │   ├── Documents
+│   │   │   ├── Estructura de Documentación para Antigravity.md
+│   │   ├── Folder Structure
+│   │   │   ├── 01. Folders Structure
+│   │   │   │   ├── 01. Folders Structure.md
+│   │   │   │   ├── BLUEPRINT.md.md
+│   │   │   │   ├── PROJECT_SPEC.md.md
+│   │   │   ├── 02. Skills
+│   │   │   │   ├── 02 .agent-skills.md
+│   │   │   │   ├── 02a. scripts and resources subfolders.md
+│   │   │   │   ├── 02b. SKILL.md.md
+│   │   │   │   ├── 02c. To create a new skill (React).md
+│   │   │   │   ├── 02d. To create a new skill (c-sharp).md
+│   │   │   │   ├── 02e. Create  SKILL.md.md
+│   │   │   │   ├── 02f. Create skill.md locally for each project.md
+│   │   │   ├── Untitled
+│   │   ├── Hard Guardrails
+│   │   │   ├── 01. Analyzers.md
+│   │   │   ├── 02. Hard Guardrails.md
+├── 05-Projects
+│   ├── prompt.txt
+│   ├── tree de 05-projects.txt
+│   ├── what-is-this.md
+│   ├── AHS.eCommerce
+│   │   ├── AHS.eCommerce.md
+│   │   ├── BigCommerce
+│   │   ├── Shopify Plus
+│   ├── AHS.FinTechBook
+│   │   ├── what-is-this.md
+│   │   ├── Code-Docs
+│   │   │   ├── what-is-this.md
+│   │   │   ├── ADRs
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Playbooks
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Release-Notes
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Requirements
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Research
+│   │   │   │   ├── what-is-this.md
+│   │   ├── Shortcuts
+│   │   │   ├── what-is-this.md
+│   ├── AHS.MicroSaaS
+│   │   ├── New-MicroSaaS-Project.ps1
+│   │   ├── what-is-this.md
+│   │   ├── _Antigravity
+│   │   ├── _Project-Template
+│   │   │   ├── what-is-this.md
+│   │   │   ├── ADRs
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Playbooks
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Release-Notes
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Requirements
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Research
+│   │   │   │   ├── what-is-this.md
+│   │   ├── Code-Docs
+│   │   │   ├── what-is-this.md
+│   │   │   ├── ADRs
+│   │   │   │   ├── ADR 001 - Elección de .NET 10 Native AOT para Predictive Risk Management.md
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Playbooks
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Release-Notes
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Requirements
+│   │   │   │   ├── what-is-this.md
+│   │   │   ├── Research
+│   │   │   │   ├── what-is-this.md
+│   │   ├── Components
+│   │   │   ├── what-is-this.md
+│   │   ├── Ideas
+│   │   │   ├── what-is-this.md
+│   │   ├── Planes
+│   │   ├── Projects
+│   │   │   ├── what-is-this.md
+│   │   │   ├── Healthcare Suite (med)
+│   │   │   │   ├── Untitled 1.md
+│   │   │   ├── Logistic (log)
+│   │   │   │   ├── 001. Predictive risk (learn)
+│   │   │   │   │   ├── Predictive risk.md
+│   │   ├── Shortcuts
+│   │   │   ├── AHS.Logistics.lnk
+│   │   │   ├── what-is-this.md
+│   ├── AHS.Shopify
+│   │   ├── 01. El Ecosistema de Shopify, que puedo ofrecer.md
+│   │   ├── 02. La hora CSharp-.NET10-AOT.md
+│   │   ├── 03. El mercado de Shopify.md
+│   │   ├── 04. Alternativas a Shopify.md
+│   │   ├── 05. MVP.md
+├── 10-Arquitectura-de-Software
+│   ├── what-is-this.md
+│   ├── 📌 Especificación de Producto (Product Spec)
+│   │   ├── 01. Qué es un Product Spec.md
+│   │   ├── 02..md
+│   ├── Clean-Architecture
+│   │   ├── what-is-this.md
+│   ├── CQRS
+│   │   ├── what-is-this.md
+│   ├── DDD
+│   │   ├── what-is-this.md
+│   ├── Event-Driven
+│   │   ├── what-is-this.md
+│   ├── Foundry-Azure-Architecture
+│   │   ├── what-is-this.md
+│   ├── Modular-Monolith
+│   │   ├── what-is-this.md
+│   ├── Patterns
+│   │   ├── what-is-this.md
+│   ├── SOLID-DRY-KISS
+│   │   ├── what-is-this.md
+│   ├── Windsurf-Rules-and-Naming
+│   │   ├── what-is-this.md
+├── 20-Backend-DotNet
+│   ├── what-is-this.md
+│   ├── AutoMapper
+│   │   ├── what-is-this.md
+│   ├── Dependency-Injection
+│   │   ├── what-is-this.md
+│   ├── EF-Core
+│   │   ├── what-is-this.md
+│   ├── FluentValidation
+│   │   ├── what-is-this.md
+│   ├── MediatR
+│   │   ├── what-is-this.md
+│   ├── Minimal-APIs-and-Controllers
+│   │   ├── what-is-this.md
+│   ├── Multitenancy
+│   │   ├── what-is-this.md
+│   ├── Testing-xUnit-NSubstitute
+│   │   ├── what-is-this.md
+├── 30-Azure-and-Cloud
+│   ├── what-is-this.md
+│   ├── Azure-App-Service
+│   │   ├── what-is-this.md
+│   ├── Azure-Container-Apps
+│   │   ├── what-is-this.md
+│   ├── Azure-DevOps-Pipelines
+│   │   ├── what-is-this.md
+│   ├── Azure-Functions
+│   │   ├── what-is-this.md
+│   ├── Azure-Monitor-and-App-Insights
+│   │   ├── what-is-this.md
+│   ├── Azure-SQL-and-PostgreSQL
+│   │   ├── what-is-this.md
+│   ├── Blob-Storage
+│   │   ├── what-is-this.md
+│   ├── Key-Vault
+│   │   ├── what-is-this.md
+├── 40-DevOps-and-Automation
+│   ├── what-is-this.md
+│   ├── CI-CD
+│   │   ├── what-is-this.md
+│   ├── Docker
+│   │   ├── what-is-this.md
+│   ├── Git-Workflows
+│   │   ├── what-is-this.md
+│   ├── GitHub-Actions
+│   │   ├── what-is-this.md
+│   ├── GitHub-Copilot
+│   │   ├── what-is-this.md
+│   ├── IaC-Bicep-Terraform
+│   │   ├── what-is-this.md
+│   ├── PowerShell-7-Scripts
+│   │   ├── what-is-this.md
+│   ├── Semantic-Versioning
+│   │   ├── what-is-this.md
+├── 50-Machine-Learning-and-AI
+│   ├── what-is-this.md
+│   ├── AutoML
+│   │   ├── what-is-this.md
+│   ├── Azure-ML
+│   │   ├── what-is-this.md
+│   ├── Forecasting-Models
+│   │   ├── what-is-this.md
+│   ├── LLMs-and-Embeddings
+│   │   ├── what-is-this.md
+│   ├── NotebookLM
+│   │   ├── what-is-this.md
+│   ├── Prompt-Engineering
+│   │   ├── what-is-this.md
+│   ├── Python-Libraries
+│   │   ├── what-is-this.md
+├── 60-Data-and-Databases
+│   ├── what-is-this.md
+│   ├── Azure-SQL
+│   │   ├── what-is-this.md
+│   ├── Backups-and-Snapshots
+│   │   ├── what-is-this.md
+│   ├── Data-Modeling
+│   │   ├── what-is-this.md
+│   ├── Indexing-and-Performance
+│   │   ├── what-is-this.md
+│   ├── OLTP-vs-OLAP
+│   │   ├── what-is-this.md
+│   ├── PostgreSQL
+│   │   ├── what-is-this.md
+│   ├── Power-BI
+│   │   ├── what-is-this.md
+│   ├── SQL-Server
+│   │   ├── what-is-this.md
+├── 70-Frontend-and-UI
+│   ├── what-is-this.md
+│   ├── Blazor
+│   │   ├── what-is-this.md
+│   ├── Bootstrap-Tailwind
+│   │   ├── what-is-this.md
+│   ├── React
+│   │   ├── what-is-this.md
+│   ├── Responsive-Design
+│   │   ├── what-is-this.md
+│   ├── UX-Heuristics
+│   │   ├── what-is-this.md
+├── 80-Security
+│   ├── what-is-this.md
+│   ├── API-Keys
+│   │   ├── what-is-this.md
+│   ├── Entra-ID
+│   │   ├── what-is-this.md
+│   ├── Identity-Management
+│   │   ├── what-is-this.md
+│   ├── JWT
+│   │   ├── what-is-this.md
+│   ├── OAuth2
+│   │   ├── what-is-this.md
+│   ├── OpenID-Connect
+│   │   ├── what-is-this.md
+│   ├── OWASP
+│   │   ├── what-is-this.md
+├── 90-MicroSaaS-Ideas-and-Components
+│   ├── what-is-this.md
+│   ├── Auto-Dashboards
+│   │   ├── what-is-this.md
+│   ├── Dev-Services
+│   │   ├── what-is-this.md
+│   ├── PDF-to-CSV
+│   │   ├── what-is-this.md
+│   ├── Scripts-and-Automations
+│   │   ├── what-is-this.md
+│   ├── Shopify-Monitoring
+│   │   ├── what-is-this.md
+│   ├── Small-APIs
+│   │   ├── what-is-this.md
+├── 95-Resources-and-Learning
+│   ├── what-is-this.md
+│   ├── Articles
+│   │   ├── what-is-this.md
+│   ├── Courses
+│   │   ├── what-is-this.md
+│   ├── NotebookLM-Notes
+│   │   ├── what-is-this.md
+│   ├── Official-Docs
+│   │   ├── what-is-this.md
+│   ├── PowerShell-and-AutoHotkey-Training
+│   │   ├── what-is-this.md
+│   ├── Videos
+│   │   ├── what-is-this.md
+├── 98-Templates
+│   ├── ADR-By-BC.md
+│   ├── ADR.001.md
+│   ├── ADR.md
+│   ├── Daily.md
+│   ├── Journal.md
+│   ├── Research.md
+│   ├── semana.md
+│   ├── Snippet-CSharp.md
+│   ├── Snippet-TDD-xUnit-NSubstitute.md
+│   ├── what-is-this.md
+├── 99-Attachments
+│   ├── what-is-this.md
+├── inmigracion de notas
+│   ├── FilesSnippets.MD
+│   ├── README.md
+│   ├── Agenda
+│   │   ├── Welcome.md
+│   │   ├── 🍀Glosario
+│   │   │   ├── Solution structure.md
+│   │   │   ├── Windsurf.md
+│   │   ├── 📌Agents (AI)
+│   │   │   ├── 01. LLM Agent.md
+│   │   │   ├── 02. Agent Specification.md
+│   │   │   ├── 03. Agent Specification Template.md
+│   │   │   ├── 04. Sample AccountsPayable-BC-Specification.md
+│   │   ├── 🔅🔅Google Antigravity
+│   │   │   ├── Setup
+│   │   │   │   ├── Windows paths for Google Antigravity.md
+│   │   ├── 🔰 AI Notes
+│   │   │   ├── Random to organize
+│   │   │   │   ├── AOT (Ahead of Time).md
+│   │   ├── 🚀 LifeManager 2026
+│   │   │   ├── Salud
+│   │   │   │   ├── Hasta 2025
+│   │   │   │   │   ├── Learn
+│   │   │   │   │   │   ├── 4 Ways Fitness Is Key to Healthy Aging, and How to Start.md
+│   │   ├── 🚀 Other Agendas
+│   │   │   ├── Caso AA
+│   │   │   │   ├── 02. Amenaza devolución a Panamá.md
+│   │   ├── 🚀 Project Micro SaaS
+│   │   │   ├── Codificacion
+│   │   │   │   ├── 01. Patrón de dominios.md
+│   │   │   │   ├── 02. AHS.md
+│   │   │   │   ├── 03. Estructura.md
+│   │   │   │   ├── 50. Instalar modelo ONNX real y .keep placeholder.md
+│   │   │   │   ├── 51. Paquete de entrenamiento.md
+│   │   │   │   ├── 52. Cómo se crea y activa un Entorno Virtual.md
+│   │   │   ├── Control del cliente
+│   │   │   │   ├── 01. Control de la data.md
+│   │   │   │   ├── 01a. Sugerencia de Gemini.md
+│   │   │   │   ├── 02. Satisfacción del cliente.md
+│   │   │   │   ├── 03. Modelo=Consumo.md
+│   │   │   │   ├── 04. Es  una aplicación web.md
+│   │   │   │   ├── 05. Transparencia total.md
+│   │   │   │   ├── 06. Certificaciones del proveedor Servicio en la nube.md
+│   │   │   │   ├── 08. Delaware, Cláusula de Confianza.md
+│   │   │   ├── Documents
+│   │   │   │   ├── Blueprint Estratégico de Negocio y Tecnología
+│   │   │   │   │   ├── 01. Estructura completa del documento.md
+│   │   │   │   │   ├── 02. Borrador del Plan Maestro de Negocio y Tecnología (PMNT).md
+│   │   │   │   │   ├── 03..md
+│   │   │   │   ├── Coding
+│   │   │   │   │   ├── Estrategias
+│   │   │   │   │   │   ├── 01. Los clientes del producto podrían tener su bases d datos en sus propios servidores, sea en la nube o on-premise.md
+│   │   │   │   │   │   ├── 02. Propuesta de Manejo de Datos para Entornos con Políticas estrictas de Seguridad.md
+│   │   │   │   │   │   ├── 02a. Version ampliada para distintos objetivos.md
+│   │   │   │   │   │   ├── 03. El principio de SaaS según mi opinion es que la empresa que da el servicio  tiene una base de datos y ofrece el software, como hace empresas de contabilidad como Peachtree..md
+│   │   │   │   │   │   ├── 03a. Version ampliada.md
+│   │   │   │   │   │   ├── 04. Es una aplicación Web (ASP.NET Core) a la que se llega por internet con un browser, es decir es una app ASP.NET.md
+│   │   │   │   │   │   ├── 05. como sabría el cliente que la aplicación no retiene y guarda sus datos.md
+│   │   │   │   │   │   ├── 06.  Si utilizo Azure por ejemplo, Microsoft puede certificar que no hay bases de datos o procesos de almacenajes de datos, lo mismo con Oracle, IBM o Google, o AWS.md
+│   │   │   │   │   │   ├── 07. MI empresa seria en Panamá, pero como las leyes de USA son mas estrictas y dan mas confianza podría crear una empresa en USA para seguir sus leyes.md
+│   │   │   │   │   │   ├── 08. Incluso ya tengo la empresa en Delaware.md
+│   │   │   │   │   │   ├── 09. Empece esto como un proyecto mio, pero ahora voy a tener un socio, que maneja Logistica. Podriamos crear una LLC en USA, el es el Only Owner, y le compra a mi LLC (delaware) el servico y el cobra. Brainstorming..md
+│   │   │   │   │   │   ├── 10. Ok me gusta la idea de una LLC unica....md
+│   │   │   │   │   │   ├── 11. Entregable técnico para mostrar  e iniciar a vender la idea (por ejemplo, una demo o un documento de arquitectura).md
+│   │   │   │   │   ├── ML Python and C-Sharp
+│   │   │   │   │   │   ├── 01. Python code Implementación de un modelo de Random Forest.md
+│   │   │   │   │   │   ├── 02. Random Forest.md
+│   │   │   │   │   │   ├── 03. XGBoost.md
+│   │   │   │   │   │   ├── 04. Implementar desde C-Sharp.md
+│   │   │   │   │   │   ├── 05. Usar C-Sharp y ONNX.md
+│   │   │   │   │   │   ├── 06. Eficiencia C-Sharp vs. Python.md
+│   │   │   │   │   │   ├── 07. Uso combinado de tech.md
+│   │   │   │   │   │   ├── 08. Ejemplo conceptual Flujo de datos entre la App  y el Servicio de Predicción.md
+│   │   │   │   │   │   ├── 09. Visualizar resultados - alternativas a ASP.NET y Power BI.md
+│   │   │   │   ├── Micro apps
+│   │   │   │   │   ├── As a project
+│   │   │   │   │   │   ├── 01. As a Micro SaaS Project.md
+│   │   │   │   │   │   ├── 03. Sistema Básico de Monitoreo del Modelo (MLOps).md
+│   │   │   │   │   │   ├── 04. Incorporación de AI, MCP y Agentes.md
+│   │   │   │   │   │   ├── 05. Confianza en nuestro software.md
+│   │   │   │   │   ├── Empresa Ventas
+│   │   │   │   │   │   ├── Brainstorming.md
+│   │   │   │   │   ├── Intro
+│   │   │   │   │   │   ├── What is Micro SaaS Definition.MD
+│   │   │   │   │   ├── Micro-Saas
+│   │   │   │   │   │   ├── 01. Qué es una mini‑SaaS.md
+│   │   │   │   │   │   ├── 02. Arquitectura plantilla para un mini‑SaaS.md
+│   │   │   │   │   │   ├── 03. Tendencia.md
+│   │   │   │   │   │   ├── 04. En contra.md
+│   │   │   │   │   │   ├── links.MD
+│   │   │   │   │   ├── Predicting Temperature Excursions During Transport
+│   │   │   │   │   │   ├── prop-001-en-predicting-temperature-excursions.md
+│   │   │   │   │   │   ├── prop-001-es-predicting-temperature-excursions.md
+│   │   │   │   │   │   ├── Requerimientos original.MD
+│   │   │   │   │   │   ├── Codificacion
+│   │   │   │   │   │   │   ├── Code.MD
+│   │   │   │   │   │   ├── Predicting Temperature Excursions During Transport
+│   │   │   │   │   │   │   ├── 01. Project description.md
+│   │   │   │   │   │   │   ├── 02. Learning.md
+│   │   │   │   │   │   │   ├── 03. Learning.md
+│   │   │   │   │   │   │   ├── 04. Learning.md
+│   │   │   │   │   │   │   ├── 05. Learning.md
+│   │   │   │   │   │   │   ├── 06. Learning.md
+│   │   │   │   │   │   │   ├── 08. Learning.md
+│   │   │   │   │   │   │   ├── 09. Learning.md
+│   │   │   │   │   │   │   ├── 10. Learning.md
+│   │   │   │   │   │   │   ├── 11. Learning.md
+│   │   │   │   │   │   │   ├── 12. Learning.md
+│   │   │   │   │   │   │   ├── 13. Learning.md
+│   │   │   ├── Object Model
+│   │   │   │   ├── Scripts para rayos X de las de los Object Model de las aplicaciones.md
+│   │   │   ├── Sociedad
+│   │   │   │   ├── 01. Sociedad con Emiliano.md
+│   │   │   │   ├── 02. Esquema de Holding y Operativa.md
+│   │   │   │   ├── 03. Entregable a Emiliano.md
+│   │   │   │   ├── 04. Material para Emiliano.md
+│   │   │   │   ├── 05. Elemento 1.md
+│   │   │   │   ├── 06. Elemento 2 - El script de Python para generar los datos sintéticos de la demo.md
+│   │   │   │   ├── 07. Elemento 3 - Términos de Uso y Política de Privacidad.md
+│   │   │   ├── VS2026
+│   │   │   │   ├── TEst
+│   │   │   │   │   ├── Basico para probar micro-SaaS.md
+│   │   │   ├── WEB
+│   │   │   │   ├── 01. Estrategia.md
+│   │   │   │   ├── 02. Hosts.md
+│   │   │   │   ├── 03. Cloudflare.md
+│   │   ├── 01. Now!
+│   │   │   ├── P2 (Important)
+│   │   │   │   ├── AMAZON solve.md
+│   │   ├── 02. Begin Here
+│   │   │   ├── combined code and evergreen note.md
+│   │   │   ├── evergreen notes.md
+│   │   │   ├── Rest of notes to be imported here.md
+│   │   ├── Blog
+│   │   │   ├── El capitalismo no es un fenómeno natural; es una elección.md
+│   │   ├── Extras
+│   │   │   ├── Templates
+│   │   │   │   ├── Samples
+│   │   │   │   │   ├── Other sample.md
+│   │   ├── Je suis
+│   │   │   ├── Learning
+│   │   │   │   ├── 9 phrases only socially intelligent people use, according to psychology.md
+│   │   │   │   ├── Impostor Syndrome.md
+│   │   │   │   ├── People who have a rare combination of high IQ and high EQ usually display these 9 behaviors.md
+│   │   │   ├── Leticia Mon mere
+│   │   │   │   ├── Inicio.md
+│   │   ├── My Network
+│   │   │   ├── Financial Services
+│   │   │   │   ├── Banca
+│   │   │   │   │   ├── Intesa Sao Paulo
+│   │   │   │   │   │   ├── Intesa Sao Paulo.md
+│   │   │   ├── Government
+│   │   │   │   ├── Panama
+│   │   │   │   │   ├── IRS DGI and LLC.md
+│   │   │   │   │   ├── Cepadem Cepanim
+│   │   │   │   │   │   ├── Trazar ADW.md
+│   │   │   │   ├── USA
+│   │   │   │   │   ├── Tax
+│   │   │   │   │   │   ├── DGI
+│   │   │   │   │   │   │   ├── Mi LLC DGI Panama.md
+│   │   │   ├── To
+│   │   │   │   ├── AdSense
+│   │   │   │   │   ├── Intro to AdSense Bard.md
+│   │   │   ├── Utilities & Services
+│   │   │   │   ├── Digital Presence
+│   │   │   │   │   ├── My Phone
+│   │   │   │   │   │   ├── WIKO Y82.md
+│   │   ├── Varios
+│   │   │   ├── Guard.IsNotNull(array).md

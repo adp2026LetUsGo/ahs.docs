@@ -1,0 +1,134 @@
+C:\Users\armando\Documents\AHS.DevKnowledge
+├── _docs
+├── _ops
+│   ├── 02-Tools
+│   ├── logs
+├── 📆 Daily Agenda
+│   ├── Coding Agenda
+│   │   ├── TimeDate.Now
+│   ├── Daily
+├── 00-Inbox
+│   ├── Gemini User Ancon Hill Services
+├── 01. Antigravity
+│   ├── Configuration
+│   │   ├── Documents
+│   │   ├── Folder Structure
+│   │   ├── Hard Guardrails
+├── 05-Projects
+│   ├── AHS.eCommerce
+│   │   ├── BigCommerce
+│   │   ├── Shopify Plus
+│   ├── AHS.FinTechBook
+│   │   ├── Code-Docs
+│   │   ├── Shortcuts
+│   ├── AHS.MicroSaaS
+│   │   ├── _Antigravity
+│   │   ├── _Project-Template
+│   │   ├── Code-Docs
+│   │   ├── Components
+│   │   ├── Ideas
+│   │   ├── Planes
+│   │   ├── Projects
+│   │   ├── Shortcuts
+│   ├── AHS.Shopify
+├── 10-Arquitectura-de-Software
+│   ├── 📌 Especificación de Producto (Product Spec)
+│   ├── Clean-Architecture
+│   ├── CQRS
+│   ├── DDD
+│   ├── Event-Driven
+│   ├── Foundry-Azure-Architecture
+│   ├── Modular-Monolith
+│   ├── Patterns
+│   ├── SOLID-DRY-KISS
+│   ├── Windsurf-Rules-and-Naming
+├── 20-Backend-DotNet
+│   ├── AutoMapper
+│   ├── Dependency-Injection
+│   ├── EF-Core
+│   ├── FluentValidation
+│   ├── MediatR
+│   ├── Minimal-APIs-and-Controllers
+│   ├── Multitenancy
+│   ├── Testing-xUnit-NSubstitute
+├── 30-Azure-and-Cloud
+│   ├── Azure-App-Service
+│   ├── Azure-Container-Apps
+│   ├── Azure-DevOps-Pipelines
+│   ├── Azure-Functions
+│   ├── Azure-Monitor-and-App-Insights
+│   ├── Azure-SQL-and-PostgreSQL
+│   ├── Blob-Storage
+│   ├── Key-Vault
+├── 40-DevOps-and-Automation
+│   ├── CI-CD
+│   ├── Docker
+│   ├── Git-Workflows
+│   ├── GitHub-Actions
+│   ├── GitHub-Copilot
+│   ├── IaC-Bicep-Terraform
+│   ├── PowerShell-7-Scripts
+│   ├── Semantic-Versioning
+├── 50-Machine-Learning-and-AI
+│   ├── AutoML
+│   ├── Azure-ML
+│   ├── Forecasting-Models
+│   ├── LLMs-and-Embeddings
+│   ├── NotebookLM
+│   ├── Prompt-Engineering
+│   ├── Python-Libraries
+├── 60-Data-and-Databases
+│   ├── Azure-SQL
+│   ├── Backups-and-Snapshots
+│   ├── Data-Modeling
+│   ├── Indexing-and-Performance
+│   ├── OLTP-vs-OLAP
+│   ├── PostgreSQL
+│   ├── Power-BI
+│   ├── SQL-Server
+├── 70-Frontend-and-UI
+│   ├── Blazor
+│   ├── Bootstrap-Tailwind
+│   ├── React
+│   ├── Responsive-Design
+│   ├── UX-Heuristics
+├── 80-Security
+│   ├── API-Keys
+│   ├── Entra-ID
+│   ├── Identity-Management
+│   ├── JWT
+│   ├── OAuth2
+│   ├── OpenID-Connect
+│   ├── OWASP
+├── 90-MicroSaaS-Ideas-and-Components
+│   ├── Auto-Dashboards
+│   ├── Dev-Services
+│   ├── PDF-to-CSV
+│   ├── Scripts-and-Automations
+│   ├── Shopify-Monitoring
+│   ├── Small-APIs
+├── 95-Resources-and-Learning
+│   ├── Articles
+│   ├── Courses
+│   ├── NotebookLM-Notes
+│   ├── Official-Docs
+│   ├── PowerShell-and-AutoHotkey-Training
+│   ├── Videos
+├── 98-Templates
+├── 99-Attachments
+├── inmigracion de notas
+│   ├── Agenda
+│   │   ├── 🍀Glosario
+│   │   ├── 📌Agents (AI)
+│   │   ├── 🔅🔅Google Antigravity
+│   │   ├── 🔰 AI Notes
+│   │   ├── 🚀 LifeManager 2026
+│   │   ├── 🚀 Other Agendas
+│   │   ├── 🚀 Project Micro SaaS
+│   │   ├── 01. Now!
+│   │   ├── 02. Begin Here
+│   │   ├── Blog
+│   │   ├── Extras
+│   │   ├── Je suis
+│   │   ├── My Network
+│   │   ├── Varios

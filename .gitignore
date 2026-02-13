@@ -1,0 +1,5 @@
+﻿.obsidian/
+.trash/
+.DS_Store
+Thumbs.db
+*.sync-conflict
