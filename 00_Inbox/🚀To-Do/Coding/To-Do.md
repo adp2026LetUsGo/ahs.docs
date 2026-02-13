@@ -5,4 +5,4 @@ Creacion site anconHS.com, presentación
 [[Posibles socios]]
 [[ahs-azu-dev]]
 
-La cotización que me pidió Choy
+La cotización que me pidió Servientrega (Jose Luis)
