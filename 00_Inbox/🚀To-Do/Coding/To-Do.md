@@ -18,3 +18,5 @@ What's --> |   |
 
 
 https://app.therundown.ai/guides/how-this-hidden-insights-feature-improves-claude-code?utm_source=www.therundown.ai&utm_medium=newsletter&utm_campaign=xai-s-co-founder-exodus-continues&_bhlid=4921f64dc9ef0752ec2ce6e69b733ce641e24c02
+
+Continuar con Marketing: Lo basico de Marketing completar consulta con Copilot M365
