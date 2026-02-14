@@ -7,6 +7,7 @@ Creacion site anconHS.com, presentación
 [[Posibles socios]]
 [[ahs-azu-dev]]
 
+Prompt socratico
 
 La cotización que me pidió Servientrega (Jose Luis)
 
