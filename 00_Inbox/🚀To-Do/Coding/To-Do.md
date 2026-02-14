@@ -1,13 +1,14 @@
 GitHub Actions: completar
-
+Agregar Lo básico de los Prompts: Prompt socratico
 Completar código de [[temp-excursions]]
+
 Agregar básicos: micro-SaaS
 Marketing: 
 Creacion site anconHS.com, presentación 
 [[Posibles socios]]
 [[ahs-azu-dev]]
 
-Prompt socratico
+
 
 La cotización que me pidió Servientrega (Jose Luis)
 
