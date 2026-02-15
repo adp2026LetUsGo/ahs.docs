@@ -17,8 +17,8 @@ Aquí tienes mi recomendación para optimizar tu consumo de tokens en **Antigrav
 
 ### 📊 Estrategia de Selección de Modelos
 
-|**Tarea**|**Modelo Recomendado**|**Razón**|
-|---|---|---|
-|**Arquitectura e Inicialización**|**Gemini 3 Pro (High)**|Solo úsalo para el "Paso Cero" (el prompt que te di arriba). Necesitamos su máxima capacidad para organizar el `.slnx` y los servicios sin errores.|
-|**Codificación de Métodos y Fixes**|**Gemini 3 Flash**|Una vez que la estructura esté creada, cambia a Flash. Es extremadamente rápido, consume muy pocos tokens y es excelente para escribir lógica repetitiva como el `CsvService`.|
-|**Depuración de errores AOT**|**Gemini 3 Pro (Low)**|Si el despliegue falla en Azure, este modelo es el equilibrio perfecto para analizar logs sin el costo del "High".|
+| **Tarea**                           | **Modelo Recomendado**  | **Razón**                                                                                                                                                                      |
+| ----------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Arquitectura e Inicialización**   | **Gemini 3 Pro (High)** | Solo úsalo para el "Paso Cero" (el prompt que te di arriba). Necesitamos su máxima capacidad para organizar el `.slnx` y los servicios sin errores.                            |
+| **Codificación de Métodos y Fixes** | **Gemini 3 Flash**      | Una vez que la estructura esté creada, cambia a Flash. Es extremadamente rápido, consume muy pocos tokens y es excelente para escribir lógica repetitiva como el `CsvService`. |
+| **Depuración de errores AOT**       | **Gemini 3 Pro (Low)**  | Si el despliegue falla en Azure, este modelo es el equilibrio perfecto para analizar logs sin el costo del "High".                                                             |
