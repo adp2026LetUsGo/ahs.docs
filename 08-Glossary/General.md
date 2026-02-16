@@ -21,6 +21,9 @@ Una interfaz adaptativa es un sistema de interacción persona-computadora que mo
 
 
 #InterfacesResponsivas
+
+
+#InterfacesResponsivas
 ##### Interfaces responsivas
 
 
