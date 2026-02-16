@@ -1,5 +1,4 @@
-
-GitHub Actions: completar
+CI/CD pipelines
 
 Agregar Lo básico de los Prompts: Prompt socratico
 Completar código de [[temp-excursions]]
