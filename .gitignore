@@ -1,5 +1,21 @@
-﻿.obsidian/
+﻿# --- Obsidian: Respaldar plugins pero no el historial de sesión ---
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache/
+.obsidian/plugins/obsidian-git/
+
+# --- Carpetas de basura y conflictos ---
 .trash/
+*.sync-conflict
 .DS_Store
 Thumbs.db
-*.sync-conflict
+
+# --- Desarrollo .NET 10 (Para que tu repo ahs.docs esté limpio) ---
+[Bb]in/
+[Oo]bj/
+*.log
+*.tmp
+
+# Si alguna vez metes código Node.js
+node_modules/
