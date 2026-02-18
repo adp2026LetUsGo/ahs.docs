@@ -1,0 +1,26 @@
+# Obsidian internals y caché
+.obsidian/workspace*
+.obsidian/cache
+.trash/
+.DS_Store
+Thumbs.db
+
+# Plugins (ajusta si quieres versionarlos)
+.obsidian/plugins/obsidian-git/data.json
+
+# Secretos y datos locales
+*.env
+*.env.local
+secrets/
+private/
+
+# Binarios pesados (usa Git LFS si quieres trackearlos)
+*.zip
+*.7z
+*.mp4
+*.psd
+*.exe
+*.dll
+
+# Adjuntos grandes fuera de control de versiones (opcional)
+99-Attachments/

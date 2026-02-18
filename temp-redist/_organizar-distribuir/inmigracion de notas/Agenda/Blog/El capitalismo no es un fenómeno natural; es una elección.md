@@ -1,0 +1,1 @@
+"El capitalismo no es un fenómeno natural; es una elección", atribuida a la científica y escritora Robin Wall Kimmerer.

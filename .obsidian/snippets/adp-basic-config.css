@@ -1,0 +1,73 @@
+/* ============================================================
+   CONFIGURACIÓN FINAL: CONTRASTE PASTEL REFORZADO
+   ============================================================ */
+
+/* --- 1. BARRA LATERAL (NAVEGADOR) --- */
+
+/* Item seleccionado: Fondo naranja, texto negro, tamaño normal */
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+    background-color: #fc9003 !important; 
+    color: #000000 !important;
+    font-weight: normal !important;
+    font-size: inherit !important;
+}
+
+/* Efecto Hover: Fondo azul al pasar el ratón */
+.nav-file-title:hover:not(.is-active), 
+.nav-folder-title:hover:not(.is-active) {
+    background-color: #037bfc !important;
+    color: #ffffff !important;
+}
+
+/* --- 2. HEADERS CON COLORES PASTELES (FORZADOS) --- */
+
+/* H1 - Azul Acero Pastel */
+.markdown-source-view.mod-cm6 .cm-header-1,
+.markdown-rendered h1,
+.inline-title {
+    color: #8db5e2 !important;
+    font-size: 1.8em !important;
+    font-weight: 700 !important;
+    border-bottom: 1px solid #3e3e3e !important;
+}
+
+/* H2 - Verde Salvia / Menta */
+.markdown-source-view.mod-cm6 .cm-header-2,
+.markdown-rendered h2 {
+    color: #a8d5ba !important;
+    font-size: 1.5em !important;
+    font-weight: 700 !important;
+    border-bottom: 1px solid #333333 !important;
+}
+
+/* H3 - Lavanda / Violeta Tenue */
+.markdown-source-view.mod-cm6 .cm-header-3,
+.markdown-rendered h3 {
+    color: #d1b3e0 !important;
+    font-size: 1.25em !important;
+    font-weight: 600 !important;
+}
+
+/* H4 - Arena / Melocotón Suave */
+.markdown-source-view.mod-cm6 .cm-header-4,
+.markdown-rendered h4 {
+    color: #e6c8a8 !important;
+    font-size: 1.1em !important;
+    font-weight: 600 !important;
+}
+
+/* --- 3. TIPOGRAFÍA Y CUERPO --- */
+.markdown-rendered, 
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6 .cm-line {
+    font-family: 'Segoe UI', sans-serif !important;
+    line-height: 1.7 !important;
+    color: #e0e0e0 !important; /* Blanco roto para evitar fatiga */
+}
+
+/* --- 4. CALLOUTS --- */
+.callout { border-left: 5px solid !important; background-color: #1a1a1a !important; }
+.callout[data-callout="info"] { --callout-color: 93, 167, 229; }
+.callout[data-callout="tip"] { --callout-color: 168, 213, 186; }
+.callout[data-callout="warning"] { --callout-color: 230, 200, 168; }

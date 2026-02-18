@@ -1,0 +1,13 @@
+En esta estructura de directorios de Obsidian quiero agregar toda la documentación previa, actual y posterior que desarrolle.
+Esta documentaccion debe serguir normaas de estructurado siguiendo las buenas practicas de documentación de proyectos y soluciones de software.
+Tambien de la estructura de directorios me puedes proporcionar ejemplos de cada documento
+Mi objetivo es documentar todo el ciclo de vida de estos proyectos y soluciones de software siguiendo buenas prácticas profesionales, y convertir esta estructura en un sistema documental completo, coherente y escalable.
+Proporcioname una estructura de directorios mejorada, alineada con estándares como Diátaxis, Arc42, ADR, Playbooks, Knowledge Base, Project Lifecycle Docs y Solution Architecture.
+Incluye ejemplos completos de cada tipo de documento, templates de cobntenido y cree plantillas más completas (por ejemplo, C4 con diagramas Mermaid)
+- Genere un README general para todo el vault
+- Generar un what-is-this.md en cada carpeta explicando su función.
+
+
+
+
+
