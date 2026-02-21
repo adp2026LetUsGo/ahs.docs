@@ -21,3 +21,12 @@ What's --> |   |
 https://app.therundown.ai/guides/how-this-hidden-insights-feature-improves-claude-code?utm_source=www.therundown.ai&utm_medium=newsletter&utm_campaign=xai-s-co-founder-exodus-continues&_bhlid=4921f64dc9ef0752ec2ce6e69b733ce641e24c02
 
 Continuar con Marketing: Lo basico de Marketing completar consulta con Copilot M365
+Procedimiento para vender en Shopify (marketplace?)
+
+
+- Configuración de Skills en Claude
+- [ ] Configuración de Skills en otros AI (Windsurf, Cursor)
+
+> - [ ] Cambiar contraseña ardiazpuga@gmail.com
+> - [ ] Cambiar contraseña armando.diaz.puga@outlook.com
+> - [ ] Kena: cambio de oferta. No permite. Comprar otra oferta SIM. Consultar AI.
