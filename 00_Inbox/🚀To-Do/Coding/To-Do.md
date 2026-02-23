@@ -1,6 +1,6 @@
 
 Agregar Lo básico de los Prompts: Prompt socratico
-Completar código de [[temp-excursions]]
+Completar código de [[00_Inbox/🚀To-Do/Puntual/temp-excursions]]
 
 Agregar básicos: micro-SaaS
 Marketing: 
