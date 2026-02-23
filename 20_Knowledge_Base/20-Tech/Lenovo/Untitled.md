@@ -44,7 +44,9 @@ Cuando vuelvas a Windows, usarás la VGA básica (se verá simple por unos segun
 
 4️⃣ **Valida otra vez con:**
 
-``` Powershell
+
+``` powershell
 
 Get-CimInstance Win32_VideoController | Select Name,DriverVersion,DriverDate
+
 ```
