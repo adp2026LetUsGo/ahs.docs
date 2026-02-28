@@ -7,10 +7,10 @@
 | `ahs-saas-ml-engine` | Horizontal: Machine Learning & ONNX services. | (TBD)     | Initialization |
 
 ## 🔑 API Keys (AI Studio)
-| Key Name             | Project Linked       | Usage                         | Env |
-| :------------------- | :------------------- | :---------------------------- | :-- |
-| `Pharma-Gateway-Key` | `ahs-pharma-suite`   | Backend API communication.    | Dev |
-| `ML-Training-Key`    | `ahs-saas-ml-engine` | Model training & ONNX export. | Dev |
+| Key Name          | Project Linked       | Usage                         | Env |
+| :---------------- | :------------------- | :---------------------------- | :-- |
+| ahs-pharma-suite  | `ahs-pharma-suite`   | Backend API communication.    | Dev |
+| `ML-Training-Key` | `ahs-saas-ml-engine` | Model training & ONNX export. | Dev |
 
 ## 🌐 Endpoints (Local)
 - **Gateway API:** `http://localhost:5000`
