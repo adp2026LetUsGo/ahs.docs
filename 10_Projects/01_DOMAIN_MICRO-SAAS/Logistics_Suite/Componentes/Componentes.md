@@ -36,7 +36,7 @@ Live Map
 GxP Audit Trail
 Predictive Science
 System Logs
-
+Engine Latency 
 
 Pregunta:
 GxP Audit Trail = GxP Audit Ledger 
@@ -49,3 +49,4 @@ Comparison of Concepts
 SIMO_LATENCY
 GxP_Integrity
 
+---------------------------
