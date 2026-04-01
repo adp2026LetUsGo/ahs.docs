@@ -1,5 +1,5 @@
 tengo este use case 
-Preguntas: 1. Para que tienes la data historica, para entrenar al modelo antes de ingresar un nuevo registro?2. El use case no indica que se puede ingresar nuevo registro. 3. En ese caso el use case que pide, que el pronistico se base solo en la data que se carga?4. Siguiendo aplicaciones similares que sugieresUse Case: Predicting Temperature Excursions During Transport
+Preguntas: 1. Para que tienes la data histórica, para entrenar al modelo antes de ingresar un nuevo registro?2. El use case no indica que se puede ingresar nuevo registro. 3. En ese caso el use case que pide, que el pronistico se base solo en la data que se carga?4. Siguiendo aplicaciones similares que sugieresUse Case: Predicting Temperature Excursions During Transport
 
 ## ID
 req-001-predicting-temperature-excursions
