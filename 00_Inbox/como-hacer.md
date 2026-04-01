@@ -1,4 +1,446 @@
+tengo este use casePreguntas: 1. Para que tienes la data historica, para entrenar al modelo antes de ingresar un nuevo registro?2. El use case no indica que se puede ingresar nuevo registro. 3. En ese caso el use case que pide, que el pronistico se base solo en la data que se carga?4. Siguiendo aplicaciones similares que sugieresUse Case: Predicting Temperature Excursions During Transport
 
+## ID
+req-001-predicting-temperature-excursions
+
+Date: 2025.Dic.10
+
+By: Emiliano
+
+🎯 Goal
+Predict whether a shipment will likely experience a temperature excursion (out-of-spec) before it arrives, so you can act proactively (e.g., add thermal protection, change carrier, notify client).
+
+🔢 1. Input Data (Features Needed)
+Use historical shipment data, with one row per shipment. Include:
+Feature	Description
+Route_ID	Unique lane code (e.g., PTY->DAV)
+Carrier	Name of transport company
+Departure_Time	Timestamp of pickup
+Transit_Time_Hrs	Actual time between pickup and delivery
+External_Temp_Avg	Average outside temperature during transit
+Packaging_Type	Thermal box, passive, active, etc.
+Product_Type	Temp-sensitive vs ambient
+Shipment_Size	# of boxes or pallets
+Delay_Flag	1 if shipment was delayed
+Temp_Excursion	Target variable – 1 if out-of-spec, 0 if not
+
+Optional: Add weather conditions, holiday periods, and carrier on-time reliability.
+
+🧠 2. Basic Model Approach
+Use a classification algorithm to predict Temp_Excursion.
+
+Tools: Excel or Power BI: Use logistic regression or binary decision rules.
+
+Python:
+Train test split
+Use RandomForestClassifier or XGBoost
+Evaluate using accuracy, precision, recall
+Example in Python (simplified):
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+
+# Load data
+df = pd.read_csv("shipments.csv")
+X = df.drop('Temp_Excursion', axis=1)
+y = df['Temp_Excursion']
+
+# Encode categorical variables
+X = pd.get_dummies(X)
+
+# Train/test split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Train model
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+
+
+# Evaluate
+y_pred = model.predict(X_test)
+print(classification_report(y_test, y_pred))
+
+📈 3. Output
+
+For each future shipment, the model can predict:
+
+Probability of failure (e.g., 0.78)
+
+Binary flag (1 = high risk, 0 = low risk)
+
+You can also extract:
+
+Feature importance (e.g., route, delay, packaging)	
+
+🛠️ 4. Next Steps for Implementation
+
+Start with manual scoring in Excel:
+Assign points for risk factors (e.g., "Route in Summer + Delay + Passive Packaging" = High Risk).
+Evolve to Power BI dashboard with risk score heatmaps.
+Use Python or cloud ML tools once data matures.
+
+Aquí tienes respuestas claras a tus **cuatro preguntas**, basadas directamente en tu use case, y además te doy recomendaciones de cómo se ve *realmente* un flujo correcto siguiendo prácticas comunes en ML y en apps similares.
+
+***
+
+# ✅ Respuestas directas a tus preguntas
+
+## **1. ¿Para qué tienes la data histórica? ¿Se usa para entrenar el modelo antes de ingresar un nuevo registro?**
+
+Sí.  
+La **data histórica existe para entrenar el modelo**.
+
+*   El modelo aprende patrones en los datos pasados (rutas, temperatura externa, packaging, retrasos, etc.).
+*   Una vez entrenado, el modelo se usa para **predecir la probabilidad de excursión** en un nuevo envío.
+
+👉 **La data histórica NO se usa cada vez que llega un nuevo registro.**  
+Solo durante el *entrenamiento* del modelo.  
+Después, el modelo predice usando un solo registro nuevo.
+
+***
+
+## **2. El use case no indica que se pueda ingresar un nuevo registro. ¿Es un problema?**
+
+No es un problema.  
+El use case está escrito desde el punto de vista funcional, no técnico.
+
+Pero **implícitamente sí asume que habrá registros futuros** porque dice:
+
+> “Predict whether a shipment will likely experience a temperature excursion *before it arrives*.”
+
+Eso implica:
+
+*   Un envío futuro
+*   Datos disponibles al inicio del envío
+*   Aplicar el modelo a ese nuevo registro
+
+👉 Aunque el texto no lo diga explícitamente, un sistema de predicción SIEMPRE recibe nuevos registros para pronosticar.
+
+***
+
+## **3. Entonces, ¿el use case pide que el pronóstico se base solo en la data que se carga?**
+
+Sí, exactamente.
+
+En ML esto significa:
+
+1.  **Cargar data histórica** (dataset de entrenamiento)
+2.  **Entrenar modelo**
+3.  **Guardar el modelo entrenado**
+4.  Para cada envío nuevo:
+    *   Cargar solo ese registro nuevo
+    *   Pasarlo al modelo
+    *   Obtener la probabilidad de excursión
+
+👉 **El nuevo registro no se mezcla con los históricos**  
+👉 No se reentrena el modelo cada vez
+
+El modelo solo se re-entrena periódicamente (ej. mensual o trimestral) cuando tienes más datos históricos.
+
+***
+
+## **4. Siguiendo aplicaciones similares, ¿qué sugieres?**
+
+Aquí te doy prácticas típicas en aplicaciones de logística y cadena de frío:
+
+***
+
+# 🔵 Recomendación 1: Dos datasets distintos
+
+*   **Historical dataset:** Se usa solo para entrenar
+*   **Live shipments dataset:** Registros en tiempo real que se ven en un dashboard
+
+Esto lo usan UPS, DHL y Maersk.
+
+***
+
+# 🔵 Recomendación 2: No re-entrenar constantemente
+
+Aplicaciones similares (cold chain monitoring) entrenan el modelo:
+
+*   Mensual
+*   O cada 10k nuevos envíos
+*   O cada vez que cambia un carrier/temporada
+
+***
+
+# 🔵 Recomendación 3: Empezar con un modelo simple (como tu plan sugiere)
+
+Común en la industria:
+
+1.  Primero Excel con reglas (simple risk scoring)
+2.  Luego Power BI con scorecards
+3.  Finalmente un modelo ML en Python
+
+Esto es exactamente lo que recomienda WHO, IATA y empresas de pharma logistics.
+
+***
+
+# 🔵 Recomendación 4: Input del nuevo envío debe ser estructurado
+
+Para que el modelo funcione se necesita:
+
+*   Route\_ID
+*   Carrier
+*   Departure\_time (o estación del año)
+*   Packaging
+*   Product\_type
+*   External\_temp (forecast)
+*   Expected transit time
+
+👉 **Nada más.**  
+Las predicciones usan estos campos.
+
+***
+
+# 🔵 Recomendación 5: Mostrar la predicción como semáforos
+
+Muy usado en logística:
+
+| Predicción     | Probabilidad | Acción                                      |
+| -------------- | ------------ | ------------------------------------------- |
+| 🟩 Low Risk    | 0–30%        | Normal shipment                             |
+| 🟨 Medium Risk | 31–70%       | Revisar packaging o carrier                 |
+| 🟥 High Risk   | 71–100%      | Añadir protección térmica o cambiar carrier |
+
+***
+
+# 🟦 Conclusión clara y directa
+
+### ✔ La data histórica es solo para entrenar el modelo
+
+### ✔ El use case sí implica que habrá nuevos registros (aunque no lo diga explícito)
+
+### ✔ El pronóstico de un nuevo envío usa solo sus propios campos
+
+### ✔ Las mejores prácticas de apps similares confirman este flujo
+
+Si quieres, puedo:
+
+✅ Rediseñar el use case para hacerlo explícito  
+✅ Dibujar un diagrama de flujo del proceso  
+✅ Crear el pseudocódigo del sistema  
+✅ Crear una API REST para consultar predicciones
+
+Tú dime qué quieres ver primero.
+
+y que se hace con el/los nuevos registros
+
+Perfecto Armando — te explico **qué se hace exactamente con los nuevos registros**, siguiendo cómo se implementa en cualquier pipeline ML real (logística, pharma, cold chain, etc.), pero en forma super clara y práctica.
+
+***
+
+# ✅ ¿Qué se hace con los nuevos registros?
+
+Cuando llega un **nuevo envío** (nuevo registro), NO se mezcla con los históricos y NO se usa para reentrenar el modelo inmediatamente.
+
+Lo que se hace es lo siguiente:
+
+***
+
+# 🟦 **1. El nuevo registro se usa únicamente para hacer una predicción**
+
+Ejemplo:
+
+    Route_ID        = "PTY-DAV"
+    Carrier         = "TRANSPORTE XYZ"
+    Packaging       = "Passive"
+    External_Temp   = 32°C (weather forecast)
+    Transit_Time    = 5h
+    Delay_Flag      = 0 (no sabemos si habrá retraso)
+
+Este registro **entra al modelo entrenado** → el modelo devuelve:
+
+*   Probabilidad de excursión (ej. 0.81)
+*   Clasificación (High Risk)
+
+💡 **Este paso es scoring, no entrenamiento.**
+
+***
+
+# 🟦 **2. El registro se guarda en una tabla de “future shipments” o “live shipments”**
+
+Esto es estándar:
+
+*   Se usa para monitoreo en tiempo real
+*   Se usa en dashboards
+*   NO se usa para entrenamiento todavía
+
+Ejemplos de columnas sugeridas para esta tabla:
+
+| Campo                   | Descripción                   |
+| ----------------------- | ----------------------------- |
+| Shipment\_ID            | Identificador del envío       |
+| Prediction\_Probability | Probabilidad de excursión     |
+| Prediction\_Flag        | 0/1                           |
+| Timestamp               | Cuándo se generó              |
+| Modelo\_Version         | Qué modelo hizo la predicción |
+
+**Por qué guardar todo esto?**  
+Para auditoría, trazabilidad y mejora continua.
+
+***
+
+# 🟦 **3. Cuando el envío termina, el registro se actualiza con el resultado real**
+
+Después de entregar el envío, se añade:
+
+*   **Temp\_Excursion\_Real** = 0 o 1
+
+Esto es crucial.
+
+Ejemplo:
+
+| Shipment\_ID | Prediction | Actual | Error       |
+| ------------ | ---------- | ------ | ----------- |
+| 10023        | 0.81       | 1      | OK (acertó) |
+| 10024        | 0.12       | 1      | FN (falló)  |
+
+Esto sirve para:
+
+*   Calcular precisión real del modelo
+*   Monitorear si el modelo está decayendo
+*   Preparar datos para reentrenamiento futuro
+
+***
+
+# 🟦 **4. Solo después de acumular varios nuevos registros (ej. 500 o 1000), se reentrena el modelo**
+
+Buena práctica *muy común*:
+
+*   Reentrenar mensual
+*   O trimestral
+*   O cuando cambian los carriers/rutas
+*   O cuando baja la precisión del modelo
+
+Entonces:
+
+1.  Se toman los históricos + los nuevos registros "cerrados"
+2.  Se reentrena el modelo
+3.  Se genera **Modelo Versión 2**
+4.  A partir de ese punto, los nuevos envíos se predicen con el modelo v2
+
+***
+
+# 🟦 Visualización simple del flujo
+
+               HISTORICAL DATA 
+                      │
+                      ▼
+               Train Model (v1)
+                      │
+                      ▼
+             ┌──────────────────┐
+             │  New Shipment    │
+             │  (New Record)    │
+             └──────────────────┘
+                      │
+                      ▼
+              Apply Model v1 → Prediction
+                      │
+                      ▼
+           Store Record + Prediction
+                      │
+             Wait until shipment ends
+                      ▼
+          Add Actual Result (0/1 outcome)
+                      │
+            When enough new data exists
+                      ▼
+             Retrain Model → v2
+
+***
+
+# 🟦 Resumen en una frase
+
+**Los nuevos registros sirven para predecir, monitorear y luego, cuando finaliza su envío, se agregan a los históricos para reentrenar el modelo en ciclos programados.**
+
+***
+
+Si quieres, puedo generarte:
+
+*   🟦 El pipeline completo en C# (API + ML.NET)
+*   🟦 El pipeline en Python (FastAPI + scikit-learn)
+*   🟦 Un diagrama C4 o Mermaid (tú prefieres estilo Microsoft corporate/azul 😉)
+
+Dime qué formato te interesa.
+
+
+solo para aclarar,
+
+Claro Armando — aquí va la **aclaración más simple y directa posible**, sin vueltas:
+
+***
+
+# ✅ **¿Qué se hace con los nuevos registros? (respuesta super clara)**
+
+### **1. Se usan para generar una predicción.**
+
+Nada más.
+
+El nuevo envío entra → el modelo devuelve:
+
+*   probabilidad de excursión
+*   flag de riesgo
+
+Eso es todo en ese momento.
+
+***
+
+### **2. Se guardan en una tabla de pendientes / "live shipments".**
+
+Aquí el registro queda almacenado con:
+
+*   sus datos
+*   la predicción
+*   la versión del modelo que lo predijo
+
+Pero **todavía no es parte de la data histórica**.
+
+***
+
+### **3. Cuando el envío termina, se actualiza con el resultado real.**
+
+Se agrega:
+
+*   `Temp_Excursion_Real = 0/1`
+
+Ahora ese envío ya tiene:
+
+*   predicción
+*   resultado real
+
+Y está listo para uso futuro.
+
+***
+
+### **4. Periódicamente, estos registros completados se agregan al dataset histórico.**
+
+Esto se hace en lotes:
+
+*   cada mes
+*   cada 500–1000 envíos
+*   o cuando baja la precisión del modelo
+
+Entonces sí:
+
+👉 se re-entrena el modelo  
+👉 con históricos + nuevos registros completados  
+👉 se genera una nueva versión del modelo
+
+***
+
+# 🟦 **Resumen en una sola frase**
+
+Los nuevos registros **solo sirven para predecir en el momento**; **se vuelven parte del entrenamiento únicamente cuando el envío termina** y se conoce el resultado real.
+
+***
+
+Si quieres, te hago un **diagrama súper simple** del flujo para que quede cristal claro.
+
+
+
+----------------------------------------------------------------------
 You said:
 CELL
 Copilot said:
