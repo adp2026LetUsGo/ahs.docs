@@ -1,4 +1,4 @@
-﻿---
+---
 Source: C:\Users\armando\Documents\_AHS\ahs.docs\01. 🍀AHS.SaaS\00. AHSCellForge\2. CFAB CellForge Atomic Blueprint\Xinfer\00-Xinfer-Context-Purpose-and-Scope.md
 
 
