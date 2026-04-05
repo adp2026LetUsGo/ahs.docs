@@ -8,11 +8,11 @@ El perfil de desarrollo definido se aleja de los stacks genéricos para centrars
 
 *   **Identidad de Ingeniería:** No se define simplemente como un "desarrollador de .NET", sino como un **ingeniero de sistemas que diseña entornos de ejecución deterministas, mínimos y seguros**,.
 *   **Principios del Manifesto:** Se rechaza la complejidad innecesaria en favor de lo **explícito sobre lo implícito**, lo determinista sobre lo dinámico y lo mínimo sobre lo cargado de funcionalidades. Se establece que cada dependencia es un riesgo, cada abstracción tiene un costo y cada decisión en tiempo de ejecución debe ser predecible.
-*   **Objetivos Permanentes:** Los pilares son maximizar el rendimiento (tiempo de arranque, uso de memoria y throughput) y garantizar la seguridad por defecto mediante el mínimo privilegio y una superficie de ataque reducida,. Se prioriza mantener la compatibilidad total con **Native AOT**, minimizando dependencias y optimizando la observabilidad y auditabilidad.
+*   **Objetivos Permanentes:** Los pilares son maximizar el rendimiento (tiempo de arranque, uso de memoria y throughput) y garantizar la seguridad por defecto mediante el mínimo privilegio y una superficie de ataque reducida,. Se prioriza mantener la compatibilidad total con **Native AOT**, minimizando dependencias y optimizando la Observabilidad y auditabilidad.
 
 ### 2. Arquitectura Basada en Celdas (Cell-Based Architecture)
 
-La **Arquitectura Basada en Celdas** es el modelo de firma para este ecosistema, definiendo celdas como unidades de ejecución totalmente autocontenidas,.
+La **Arquitectura Basada en Celdas** es el modelo de firma para este ecosistema, definiendo celdas como unidades de ejecución totalmente auto contenidas,.
 
 *   **Definición de Celda:** Una celda es una unidad que posee su propio dominio, datos y lógica, sin compartir bases de datos con otras celdas. Debe ser construible y desplegable de forma independiente.
 *   **Comunicación:** La interacción entre celdas ocurre estrictamente a través de **contratos gRPC explícitos y versionados**,,. Se eliminan los mecanismos de descubrimiento en tiempo de ejecución y el acoplamiento oculto a través de librerías internas compartidas,.

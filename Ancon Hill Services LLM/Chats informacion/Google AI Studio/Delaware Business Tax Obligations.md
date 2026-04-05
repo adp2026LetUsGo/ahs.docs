@@ -1,4 +1,4 @@
-﻿[MODEL]:
+[MODEL]:
 **Investigating Tax Obligations**
 
 I'm now diving into the tax obligations for Delaware-registered companies. Currently, I'm focusing on the IRS forms F5472 and F1120, checking their requirements. I'm also going to identify other standard forms or taxes, such as the Delaware Franchise Tax, for both domestic and foreign-owned entities.
