@@ -215,27 +215,6 @@ Aquí es donde **SÍ debes mantener el término Native AOT**. Como Arquitecto C1
 Es, en esencia, una traducción de **beneficio técnico** a **instrucción visual**. ¿Tiene sentido para la estructura de tu PRD?
 
   
-
-Model 2:13 AM
-
-Thoughts
-
-  
-
-  
-
-  
-
-  
-
-  
-
-Expand to view model thoughts
-
-chevron_right
-
-  
-
   
 
 Como C3, analizo tu descubrimiento sobre el flujo de trabajo. Estás refinando tu modelo mental de interacción con la IA, y este es el punto donde un "Solo Programmer" se convierte en un "Orquestador de Sistemas".
