@@ -4,10 +4,10 @@
 # =====================================================================
 
 # 1. ORIGEN
-$origen  = 'C:\Users\armando\Downloads\AI-Studio-ServidoresMCP.json'
+$origen  = 'C:\Users\armando\Downloads\03.a.AHS.Antigravity.Implementation.Specs.json'
 
 # 2. DESTINO
-$destino = 'C:\Users\armando\Documents\_AHS\ahs.docs\00_Inbox\AI-Studio-ServidoresMCP.md'
+$destino = 'C:\Users\armando\Documents\_AHS\ahs.docs\00_Inbox\03.a.AHS.Antigravity.Implementation.Specs.md'
 
 # =====================================================================
 # NO EDITAR DEBAJO

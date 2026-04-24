@@ -1,6 +1,6 @@
 # 1. Define the path to your exported file (without extension)
-$inputFile = "C:\Users\armando\Downloads\Delaware Business Tax Obligations"
-$outputFile = "C:\Users\armando\Documents\_AHS\ahs.docs\Ancon Hill Services LLM\Chats informacion\Google AI Studio\Clean_Chat.txt"
+$inputFile = "C:\Users\armando\Downloads\03.a.AHS.Antigravity.Implementation.Specs.json"
+$outputFile = "C:\Users\armando\Documents\_AHS\ahs.docs\02. Inbox\03.a.AHS.Antigravity.Implementation.Specs.MD"
 
 
 # 2. Cargar el JSON
