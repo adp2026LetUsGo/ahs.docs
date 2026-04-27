@@ -4,14 +4,14 @@ Aquí tienes un "diccionario de transición" para alinear tu lenguaje con este n
 
 ### Diccionario de Transición: Del Monolito a la Celda
 
-|Concepto Antiguo (Monolítico)|Concepto Nuevo (Cell-Based)|Definición y Contexto|
-|---|---|---|
-|**Solución / Proyecto**|**Control Plane (Plano de Control)**|Ya no gestionas una "solución" única; gestionas un sistema que orquesta múltiples celdas. El _Control Plane_ decide a qué celda va cada cliente.|
-|**Aplicación / Programa**|**Cell (Celda)**|Una unidad de despliegue completa, aislada y autónoma que contiene todos los servicios necesarios para servir a un subconjunto de usuarios.|
-|**Base de Datos Central**|**Cell-Local State**|En lugar de una gran DB para todos, cada celda tiene su propio almacenamiento. Si la celda falla, el radio de explosión se limita solo a sus usuarios.|
-|**Multi-tenancy (Nivel DB)**|**Tenant Silo / Sharding**|En SaaS tradicional solías filtrar por `TenantId`. En arquitectura de celdas, el _Tenant_ vive dentro de una celda específica.|
-|**Servidor / Instancia**|**Data Plane (Plano de Datos)**|Es donde ocurre el procesamiento real de las peticiones del usuario dentro de la celda.|
-|**Balanceador de Carga**|**Thin Router / Ingress Cell Router**|No solo distribuye tráfico de forma aleatoria (Round Robin), sino que es "consciente" de la ubicación del cliente y lo dirige a su celda correspondiente.|
+| Concepto Antiguo (Monolítico) | Concepto Nuevo (Cell-Based)           | Definición y Contexto                                                                                                                                     |
+| ----------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Solución / Proyecto**       | **Control Plane (Plano de Control)**  | Ya no gestionas una "solución" única; gestionas un sistema que orquesta múltiples celdas. El _Control Plane_ decide a qué celda va cada cliente.          |
+| **Aplicación / Programa**     | **Cell (Celda)**                      | Una unidad de despliegue completa, aislada y autónoma que contiene todos los servicios necesarios para servir a un subconjunto de usuarios.               |
+| **Base de Datos Central**     | **Cell-Local State**                  | En lugar de una gran DB para todos, cada celda tiene su propio almacenamiento. Si la celda falla, el radio de explosión se limita solo a sus usuarios.    |
+| **Multi-tenancy (Nivel DB)**  | **Tenant Silo / Sharding**            | En SaaS tradicional solías filtrar por `TenantId`. En arquitectura de celdas, el _Tenant_ vive dentro de una celda específica.                            |
+| **Servidor / Instancia**      | **Data Plane (Plano de Datos)**       | Es donde ocurre el procesamiento real de las peticiones del usuario dentro de la celda.                                                                   |
+| **Balanceador de Carga**      | **Thin Router / Ingress Cell Router** | No solo distribuye tráfico de forma aleatoria (Round Robin), sino que es "consciente" de la ubicación del cliente y lo dirige a su celda correspondiente. |
 
 Export to Sheets
 
